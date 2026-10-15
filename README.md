@@ -92,6 +92,30 @@ Alecrim 3 Luxury Tailor Made Flat With a View Entire apartment   sleeps 4, 2 bd 
 Classy, elegant, comfortable, at the entrance Entire apartment   sleeps 4, 2 bd   $146/night  rating 4.91
 ```
 
+## 5. Daily price tracking for competitor hotels ([python/track_prices.py](python/track_prices.py))
+
+Run the script every day (cron, Windows Task Scheduler, or an Apify Scheduler that calls your own webhook).
+Each run appends to a local SQLite file and prints how each hotel's nightly price moved since the previous observation:
+
+```
+Prices on 2026-10-15 for check-in 2026-11-14 (EUR):
+
+  Hilton Paris Opera                               280.00   (first observation)
+  Le Meurice                                      1535.00   (first observation)
+  Pullman Paris Tour Eiffel                        320.00   (first observation)
+```
+
+On the next day you'll see something like:
+
+```
+  Hilton Paris Opera                               265.00   DOWN  5.4%  (was 280.00 on 2026-10-15)
+  Le Meurice                                      1535.00   flat  0.0%  (was 1535.00 on 2026-10-15)
+  Pullman Paris Tour Eiffel                        340.00     UP  6.3%  (was 320.00 on 2026-10-15)
+```
+
+The SQLite table has one row per `(run_at, hotel, check_in)`, so you can query the whole history with any SQL client,
+plot it, or send yourself an alert when a competitor cuts prices by more than X%.
+
 ## Node.js ([javascript/hotel_prices.mjs](javascript/hotel_prices.mjs))
 
 ```bash
