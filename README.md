@@ -115,6 +115,7 @@ On the next day you'll see something like:
 
 The SQLite table has one row per `(run_at, hotel, check_in)`, so you can query the whole history with any SQL client,
 plot it, or send yourself an alert when a competitor cuts prices by more than X%.
+Full walkthrough: [Daily price tracking for competitor hotels on dev.to](https://dev.to/huynhtanan/daily-price-tracking-for-competitor-hotels-with-python-and-sqlite-2nda).
 
 ## Node.js ([javascript/hotel_prices.mjs](javascript/hotel_prices.mjs))
 
