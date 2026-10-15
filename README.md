@@ -140,3 +140,12 @@ Every scraper can also be run from the Apify web console. You can schedule it da
 
 ---
 Output above is from real runs (prices change constantly). MIT licensed.
+
+
+## See also
+
+More repos from this account:
+
+- [amazon-bestsellers-tracker](https://github.com/huynhtanan/amazon-bestsellers-tracker) - Daily Amazon Best Sellers rank, price and ASIN tracking in 17 country stores
+- [walmart-deals-tracker](https://github.com/huynhtanan/walmart-deals-tracker) - Daily Walmart Rollback deal tracking with Python and SQLite
+- [google-hotels-mcp](https://github.com/huynhtanan/google-hotels-mcp) - MCP server for Claude Desktop: Google Hotels search, price calendar, and vacation rentals
