@@ -1,0 +1,20 @@
+$ APIFY_TOKEN=... python python/track_prices.py
+...actor starts, 3 queries, 2026-11-14 -> 2026-11-15, 2a, EUR, max 1 hotels each...
+Status: SUCCEEDED, Message: Done: 3 hotels from 3 queries
+
+Prices on 2026-10-15 for check-in 2026-11-14 (EUR):
+
+  Hilton Paris Opera                               280.00   (first observation)
+  Le Meurice                                      1535.00   (first observation)
+  Pullman Paris Tour Eiffel                        320.00   (first observation)
+
+
+$ APIFY_TOKEN=... python python/track_prices.py        # second run, two minutes later
+...
+Status: SUCCEEDED, Message: Done: 3 hotels from 3 queries
+
+Prices on 2026-10-15 for check-in 2026-11-14 (EUR):
+
+  Hilton Paris Opera                               280.00   flat  0.0%  (was 280.00 on 2026-10-15)
+  Le Meurice                                      1535.00   flat  0.0%  (was 1535.00 on 2026-10-15)
+  Pullman Paris Tour Eiffel                        320.00   flat  0.0%  (was 320.00 on 2026-10-15)
