@@ -146,8 +146,8 @@ Output above is from real runs (prices change constantly). MIT licensed.
 
 Deep-dive write-ups on dev.to:
 
-- [How to get Google Hotels prices for any dates with Python](https://dev.to/huynhtanan/how-to-get-google-hotels-prices-for-any-dates-with-python-and-the-apify-api-2n7a)
-- [Daily price tracking for competitor hotels, with Python and SQLite](https://dev.to/huynhtanan/daily-price-tracking-for-competitor-hotels-with-python-and-sqlite-5bfp)
+- [How to get Google Hotels prices for any dates with Python](https://dev.to/huynhtanan/how-to-get-google-hotels-prices-for-any-dates-with-python-and-see-which-booking-site-is-cheapest-1aod)
+- [Daily price tracking for competitor hotels, with Python and SQLite](https://dev.to/huynhtanan/daily-price-tracking-for-competitor-hotels-with-python-and-sqlite-2nda)
 
 Full series (all four actors): [Apify + Python: scrapers, trackers, and Claude Desktop](https://dev.to/huynhtanan/series/45271).
 
